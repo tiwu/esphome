@@ -1,7 +1,7 @@
 """
 ESPHome's coroutine system.
 
-The Problem: When running the code generationg, components can depend on variables being registered.
+The Problem: When running the code generation, components can depend on variables being registered.
 For example, an i2c-based sensor would need the i2c bus component to first be declared before the
 codegen can emit code using that variable (or otherwise the C++ won't compile).
 
